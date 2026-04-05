@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burnichon Stéphane — Plombier Chauffagiste à Roanne et Commelle-Vernay (42)</title>
+<meta name="description" content="Entreprise de plomberie, chauffage et sanitaire à Commelle-Vernay près de Roanne (42). Installation, dépannage, énergie renouvelable. Depuis 2001.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--primary:#367486;
+--primary-dark:#2a5c6b;
+--primary-light:#d1e5eb;
+--accent:#864d37;
+--accent-dark:#6b3d2b;
+--dark:#282828;
+--gray:#3b2112;
+--light:#f5f3f1;
+--white:#fff;
+--text:#282828;
+--text-light:#5a5a5a;
+}
+body{font-family:'Open Sans',sans-serif;color:var(--text);line-height:1.7}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;font-weight:700}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--primary);text-decoration:none;transition:color .2s}
+a:hover{color:var(--primary-dark)}
+.container{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* HEADER */
+header{background:var(--white);box-shadow:0 2px 10px rgba(0,0,0,.06);position:sticky;top:0;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.logo img{height:28px;width:auto}
+nav{display:flex;gap:22px;align-items:center}
+nav a{color:var(--dark);font-family:'Montserrat',sans-serif;font-size:.85rem;font-weight:600;transition:color .2s}
+nav a:hover{color:var(--primary)}
+.btn-cta{background:var(--accent);color:var(--white)!important;padding:10px 22px;border-radius:4px;font-weight:600;font-size:.85rem;transition:all .2s;font-family:'Montserrat',sans-serif}
+.btn-cta:hover{background:var(--accent-dark);transform:translateY(-1px)}
+.menu-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--dark)}
+
+/* HERO */
+.hero{position:relative;min-height:80vh;display:flex;align-items:center;background:linear-gradient(135deg,rgba(40,40,40,.78),rgba(54,116,134,.3)),url('https://www.burnichon-stephane.fr/media/images/upload/ill3.jpg') center/cover no-repeat;color:var(--white)}
+.hero-content{max-width:620px;padding:60px 0}
+.hero-badge{display:inline-block;background:var(--accent);padding:5px 14px;font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:18px;border-radius:3px}
+.hero h1{font-size:2.8rem;font-weight:800;line-height:1.15;margin-bottom:16px}
+.hero h1 span{color:var(--primary-light)}
+.hero p{font-size:1.05rem;color:rgba(255,255,255,.8);margin-bottom:30px;max-width:480px;line-height:1.8}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero .btn-primary{background:var(--accent);color:var(--white);padding:14px 32px;border-radius:4px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:700;transition:all .2s}
+.hero .btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.hero .btn-outline{border:2px solid var(--white);color:var(--white);padding:12px 30px;border-radius:4px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;transition:all .2s}
+.hero .btn-outline:hover{background:var(--white);color:var(--accent)}
+
+/* BAR */
+.bar-accent{background:var(--primary);color:var(--white);padding:20px 24px}
+.bar-stats{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;max-width:1080px;margin:0 auto}
+.bar-stats .stat{text-align:center}
+.bar-stats .stat strong{font-family:'Montserrat',sans-serif;font-size:1.6rem;display:block}
+.bar-stats .stat span{font-size:.78rem;opacity:.8;text-transform:uppercase;letter-spacing:.5px}
+
+/* SECTIONS */
+section{padding:68px 24px}
+.section-title{text-align:center;margin-bottom:44px}
+.section-title h2{font-size:1.9rem;color:var(--dark);margin-bottom:10px}
+.section-title h2::after{content:'';display:block;width:40px;height:3px;background:var(--accent);margin:12px auto 0}
+.section-title p{color:var(--text-light);max-width:540px;margin:0 auto;font-size:.92rem}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{background:var(--white);border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.06);transition:transform .3s,box-shadow .3s}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.1)}
+.service-card img{width:100%;height:200px;object-fit:cover}
+.service-card-body{padding:22px}
+.service-card h3{font-size:1rem;margin-bottom:8px;color:var(--dark)}
+.service-card p{font-size:.85rem;color:var(--text-light);line-height:1.6}
+
+/* ABOUT */
+.about{background:var(--light)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-img{border-radius:8px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+.about-img img{width:100%;height:380px;object-fit:cover}
+.about-text h2{font-size:1.7rem;margin-bottom:14px;color:var(--dark)}
+.about-text h2::after{content:'';display:block;width:36px;height:3px;background:var(--accent);margin-top:10px}
+.about-text p{color:var(--text-light);margin-bottom:12px;font-size:.9rem}
+.certif{display:flex;gap:16px;margin-top:20px;align-items:center}
+.certif img{height:50px;width:auto;border-radius:4px}
+.highlight-box{background:var(--primary-light);border-left:3px solid var(--primary);padding:14px 18px;border-radius:0 6px 6px 0;margin-top:18px;font-size:.88rem;font-weight:500;color:var(--dark)}
+
+/* CTA */
+.cta-section{background:linear-gradient(135deg,var(--dark) 0%,var(--accent-dark) 100%);color:var(--white);text-align:center;padding:68px 24px}
+.cta-section h2{font-size:2rem;margin-bottom:12px;color:var(--white)}
+.cta-section p{color:rgba(255,255,255,.75);margin-bottom:26px;max-width:480px;margin-left:auto;margin-right:auto;font-size:.95rem}
+.cta-tel{font-family:'Montserrat',sans-serif;font-size:1.8rem;color:var(--white);margin-top:18px;display:block;font-weight:700}
+.cta-tel:hover{color:var(--primary-light)}
+
+/* ZONE */
+.zone-cities{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.zone-cities span{background:var(--white);padding:7px 16px;border-radius:30px;font-size:.83rem;color:var(--text);border:1px solid #ddd;transition:all .2s}
+.zone-cities span:hover{border-color:var(--primary);color:var(--primary)}
+
+/* FOOTER */
+footer{background:var(--dark);color:rgba(255,255,255,.7);padding:44px 24px 20px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px;max-width:1080px;margin:0 auto}
+.footer-grid h4{font-family:'Montserrat',sans-serif;color:var(--white);font-size:.9rem;font-weight:700;margin-bottom:14px;text-transform:uppercase;letter-spacing:.5px}
+.footer-grid p,.footer-grid li{font-size:.83rem;line-height:1.8}
+.footer-grid ul{list-style:none}
+.footer-grid a{color:rgba(255,255,255,.7);transition:color .2s}
+.footer-grid a:hover{color:var(--primary-light)}
+.footer-bottom{text-align:center;border-top:1px solid rgba(255,255,255,.1);margin-top:32px;padding-top:18px;font-size:.76rem;max-width:1080px;margin-left:auto;margin-right:auto}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.services-grid{grid-template-columns:1fr 1fr}
+.about-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr 1fr}
+.hero h1{font-size:2rem}
+}
+@media(max-width:640px){
+.menu-toggle{display:block}
+nav{display:none;width:100%;flex-direction:column;gap:0;padding-top:12px}
+nav.open{display:flex}
+nav a{padding:10px 0;border-bottom:1px solid #eee;width:100%}
+.services-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr}
+.hero{min-height:70vh}
+.hero h1{font-size:1.7rem}
+.hero-btns{flex-direction:column}
+.bar-stats{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="header-inner">
+<a href="#" class="logo"><img src="https://www.burnichon-stephane.fr/smarty/wireframe31/media/images/logo.png" alt="Burnichon Stéphane"></a>
+<button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+<nav>
+<a href="#services">Services</a>
+<a href="#apropos">L'entreprise</a>
+<a href="#zone">Zone</a>
+<a href="#contact" class="btn-cta">04 77 71 82 59</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-badge">Depuis 2001</div>
+<h1>Plombier chauffagiste <span>à Roanne</span></h1>
+<p>Burnichon Stéphane, votre entreprise de plomberie, chauffage et sanitaire à Commelle-Vernay (42). Installation, dépannage, énergie renouvelable.</p>
+<div class="hero-btns">
+<a href="tel:+33477718259" class="btn-primary">Appeler maintenant</a>
+<a href="#services" class="btn-outline">Nos services</a>
+</div>
+</div>
+</div>
+</section>
+
+<div class="bar-accent">
+<div class="bar-stats">
+<div class="stat"><strong>+25 ans</strong><span>d'expérience</span></div>
+<div class="stat"><strong>Roanne</strong><span>et environs</span></div>
+<div class="stat"><strong>Dépannage</strong><span>rapide</span></div>
+<div class="stat"><strong>ENR</strong><span>certifié</span></div>
+</div>
+</div>
+
+<section id="services">
+<div class="container">
+<div class="section-title">
+<h2>Nos services</h2>
+<p>Une offre complète en plomberie, chauffage, sanitaire et énergie renouvelable pour les particuliers et les professionnels.</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<img src="https://www.burnichon-stephane.fr/media/images/upload/ill1.jpg" alt="Plomberie Roanne">
+<div class="service-card-body">
+<h3>Plomberie</h3>
+<p>Travaux de plomberie en neuf et rénovation. Raccordement, dépannage et installation d'équipements sanitaires.</p>
+</div>
+</div>
+<div class="service-card">
+<img src="https://www.burnichon-stephane.fr/media/images/upload/box4.jpg" alt="Chauffage installation Roanne">
+<div class="service-card-body">
+<h3>Chauffage</h3>
+<p>Pose, entretien et réparation de vos équipements de chauffage. Chaudières gaz, solaire, électrique, bois.</p>
+</div>
+</div>
+<div class="service-card">
+<img src="https://www.burnichon-stephane.fr/media/images/upload/box5.jpg" alt="Sanitaire salle de bain Roanne">
+<div class="service-card-body">
+<h3>Sanitaire</h3>
+<p>Conception de salles de bains et pose de sanitaires. Solutions accessibles PMR, conseils d'agencement.</p>
+</div>
+</div>
+<div class="service-card">
+<img src="https://www.burnichon-stephane.fr/media/images/upload/ill2.jpg" alt="Énergie renouvelable Loire">
+<div class="service-card-body">
+<h3>Énergie renouvelable</h3>
+<p>Installation de solutions ENR : pompes à chaleur, panneaux solaires, chauffe-eau thermodynamique.</p>
+</div>
+</div>
+<div class="service-card">
+<img src="https://www.burnichon-stephane.fr/media/images/upload/box1.jpg" alt="Dépannage plomberie Roanne">
+<div class="service-card-body">
+<h3>Dépannage</h3>
+<p>Intervention rapide pour tous vos dépannages en plomberie et chauffage. Réactivité et professionnalisme.</p>
+</div>
+</div>
+<div class="service-card">
+<img src="https://www.burnichon-stephane.fr/media/images/upload/image-contact.jpg" alt="Entretien chaudière Loire 42">
+<div class="service-card-body">
+<h3>Entretien</h3>
+<p>Contrats d'entretien pour vos chaudières et installations. Maintenance préventive et conformité réglementaire.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="apropos" class="about">
+<div class="container">
+<div class="about-grid">
+<div class="about-img">
+<img src="https://www.burnichon-stephane.fr/media/images/upload/ill3.jpg" alt="Équipe Burnichon plomberie Roanne">
+</div>
+<div class="about-text">
+<h2>Une entreprise en constante évolution</h2>
+<p>Créée le 8 janvier 2001 à Commelle-Vernay, l'entreprise Burnichon Stéphane est spécialisée en plomberie, chauffage et sanitaire.</p>
+<p>En 2003, nous avons racheté l'entreprise Millot de Coutouvre, puis en 2005 l'entreprise Benotti de Roanne, développant notre activité de dépannage.</p>
+<p>Depuis, notre chiffre d'affaires progresse régulièrement et de nouveaux collaborateurs ont rejoint l'équipe. Transformée en SAS en 2020, l'entreprise poursuit son développement.</p>
+<div class="certif">
+<img src="https://www.burnichon-stephane.fr/media/images/upload/lg1.png" alt="Certification RGE">
+<img src="https://www.burnichon-stephane.fr/media/images/upload/lg2.png" alt="Certification professionnelle">
+</div>
+<div class="highlight-box">Nous intervenons auprès des particuliers comme des professionnels, avec des références telles que Michelin et Nexter.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="zone">
+<div class="container">
+<div class="section-title">
+<h2>Notre zone d'intervention</h2>
+<p>Basés à Commelle-Vernay, nous intervenons dans tout le Roannais et ses environs.</p>
+</div>
+<div class="zone-cities">
+<span>Commelle-Vernay</span>
+<span>Roanne</span>
+<span>Coutouvre</span>
+<span>Riorges</span>
+<span>Mably</span>
+<span>Le Coteau</span>
+<span>Villerest</span>
+<span>Perreux</span>
+<span>Saint-Léger-sur-Roanne</span>
+<span>Charlieu</span>
+<span>Pouilly-sous-Charlieu</span>
+</div>
+</div>
+</section>
+
+<section id="contact" class="cta-section">
+<h2>Besoin d'un plombier chauffagiste ?</h2>
+<p>Installation, dépannage, entretien — contactez-nous pour un devis gratuit. Intervention rapide dans le Roannais.</p>
+<a href="mailto:contact@burnichon-stephane.com" class="btn-cta" style="font-size:1rem;padding:14px 36px">Demander un devis</a>
+<a href="tel:+33477718259" class="cta-tel">04 77 71 82 59</a>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div>
+<img src="https://www.burnichon-stephane.fr/smarty/wireframe31/media/images/footer-logo.png" alt="Burnichon Stéphane" style="height:44px;margin-bottom:14px;filter:brightness(10)">
+<p>Burnichon Stéphane — Plomberie, chauffage, sanitaire et énergie renouvelable à Commelle-Vernay, près de Roanne (42). Depuis 2001.</p>
+</div>
+<div>
+<h4>Services</h4>
+<ul>
+<li><a href="#services">Plomberie</a></li>
+<li><a href="#services">Chauffage</a></li>
+<li><a href="#services">Sanitaire</a></li>
+<li><a href="#services">Énergie renouvelable</a></li>
+<li><a href="#services">Dépannage</a></li>
+<li><a href="#services">Entretien</a></li>
+</ul>
+</div>
+<div>
+<h4>Contact</h4>
+<ul>
+<li><a href="tel:+33477718259">04 77 71 82 59</a></li>
+<li><a href="mailto:contact@burnichon-stephane.com">contact@burnichon-stephane.com</a></li>
+<li>Commelle-Vernay (42)</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 Burnichon Stéphane SAS — Tous droits réservés — SIREN 484480967</p>
+</div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'});document.querySelector('nav').classList.remove('open')})});
+</script>
+</body>
+</html>
